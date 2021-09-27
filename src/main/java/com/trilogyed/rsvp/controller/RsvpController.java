@@ -36,7 +36,9 @@ public class RsvpController {
     @ResponseStatus(HttpStatus.OK)
     public Rsvp getRsvp(@PathVariable int id) {
         System.out.println("GETTING RSVP ID = " + id);
+        System.out.println("test");
         return dao.getRsvp(id);
+
     }
 
     @RequestMapping(value = "/rsvps", method = RequestMethod.GET)
